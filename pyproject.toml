@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "my-python-starter"
+version = "0.1.0"
+description = "Python starter scaffold with CI and Docker"
+authors = ["Jason Warren <jaywar75@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+flake8 = "*"
+black = "*"
+isort = "*"
+mypy = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
